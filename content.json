@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Главная",
+    "title": "Генерация событий",
+    "url": "/main",
+    "type": "main", 
+    "content" : "We can use mixins as a way to augment a class by multiple behaviors, like event-handling as we have seen above. Mixins may become a point of conflict if they occasionally overwrite native class methods. So generally one should think well about the naming for a mixin, to minimize such possibility.",
+    "main_color": "rgb(190, 70, 19)",
+    "type_animation" : "main"
+  },
+  {
+    "name": "Текстовая",
+    "title": "Конструктор Event",
+    "url":"/text",
+    "type": "text",
+    "content": "Some other languages like e.g. python allow to create mixins using multiple inheritance. JavaScript does not support multiple inheritance, but mixins can be implemented by copying them into the prototype.",
+    "main_color": "rgb(219, 218, 117)",
+    "type_animation" : "text"
+  },
+  {
+    "name": "Контакты",
+    "title": "Метод dispatchEvent",
+    "url": "/contacts",
+    "type": "contacts",
+    "content": "That is: an object should have a method to “generate an event” when something important happens to it, and other objects should be able to “listen” to such events.",
+    "main_color": "rgb(219, 218, 117)",
+    "type_animation" : "contacts"
+  },
+  {
+    "name": "Новости",
+    "title": "Отмена действия по умолчанию",
+    "url": "/news",
+    "type": "news",
+    "content":"As defined in Wikipedia, a mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. In other words, a mixin provides methods that implement a certain behavior, but we do not use it alone, we use it to add the behavior to other classes.",
+    "main_color": "rgb(240, 181, 181)",
+    "type_animation" : "news",
+    "news": ["Вызов event.preventDefault() является возможностью для обработчика события сообщить в сгенерировавший событие код, что эти действия продолжать не надо.","В примере ниже есть функция hide(), которая при вызове генерирует событие hide на элементе #rabbit, уведомляя всех интересующихся, что кролик собирается спрятаться.","Любой обработчик может узнать об этом, подписавшись на событие через rabbit.addEventListener('hide',...) и, при желании, отменить действие по умолчанию через event.preventDefault(). Тогда кролик не исчезнет:","Единственный способ, которым код может отличить реальное нажатие от программного, является проверка свойства event.isTrusted."]
+  }
+]
